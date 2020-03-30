@@ -21,5 +21,5 @@ function handleServer(req, res){
 		}
 	}
 	
-	http.createServer(handleServer).listen(3000);
-	console.log('Server is running on port 3000...');	
+	http.createServer(handleServer).listen(8080);
+	console.log('Server is running on port 8080...');	
