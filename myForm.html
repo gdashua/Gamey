@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>myform</title>
+	<meta charset= "utf-8">
+	<meta name= "viewport" content= "width = device-width, initial-scale = 1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<style type="text/css">
+
+	form{
+		text-align: center;
+		background-color: #3399ff;
+		border: solid;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 10%;
+		padding-top: 10%;
+		margin-top: 5%;
+	}
+	#myInput{
+		margin: 10%;
+	}
+	input{
+		font-size: 100%;
+		border-radius: 5%;
+	}
+	#submit{
+		background-color: #990033;
+		color: white;
+	}
+	</style>
+</head>
+<body>
+
+<form method="POST" action="http://localhost:3000/message">
+	<h1>Please enter a message below:</h1>
+	<div id="myInput">
+	<input name="message" id="message" placeholder="enter message here">
+	<input type="submit" value="submit" id="submit" />
+	</div>
+</form>
+</body>
+</html>
