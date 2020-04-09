@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>register</title>
+	<style type="text/css">
+			fieldset{
+				width: 32%;
+				margin-left: 33%;
+				margin-top: 2.7%;
+				margin-bottom: 10%;
+				border-radius: 20px 20px;
+				border-bottom-left-radius: 0%; 
+				background-color: #ffffff;
+				overflow: auto;
+				z-index: 100;
+			}
+			#pigBg{
+				position: fixed;
+				z-index: -10;
+				top: 0px;
+			}
+			body{
+				background-repeat: no-repeat;
+				background-size: 100%;
+				font-family: Arial,verdana,sans-serif;
+
+			}
+			form{
+				z-index: 100;
+			}
+
+			input,#aboutUs{
+				margin-bottom: 8.2%;
+				margin-top: 2%;
+				font-size: 127%;
+				border-radius: 5px 5px;
+				padding: 3.77%;
+				width: 80%;
+				margin-left: 6.7%;
+				margin-right: 7%;
+				background-color: 	#ecf2f9;
+				border-style: none;
+				color:black;
+				letter-spacing: 0.3px;
+			}
+			label{
+				padding-right: 6%;
+				padding-left: 6.6%;
+				margin-bottom: 8%;
+				font-size: 71%;
+			}
+			p{
+				text-align: center;
+				margin-top: 8%;
+				margin-bottom: 8%;
+			}
+			#submit{
+				font-weight: solid;
+			}
+			#intro{
+				color: #0000cc;
+			}
+			span{
+				font-size: 150%;
+				color: #333399;
+				font-weight: bolder;
+				line-height: 1.5em;
+				margin-left: 2%;
+			}
+			#sintro{
+				font-size: 79%;
+				color: grey;
+				letter-spacing: 1.76px;
+				font-weight: normal;
+				width: 20%;
+				line-height: 1.4em;
+			}
+			#myList{
+				background-position: bottom;
+			}
+			input{
+				line-height: 1.6em;
+			}
+			#submit{
+				border-radius: 10px 10px;
+				border-bottom-left-radius: 0px;
+				width: 87.5%;
+				background-color: #000099;
+				margin-left: 0.3%;
+				color: white;
+			}
+			#submit:hover{
+				background-color: rgb(0,64,131);
+			}
+		#pigB{
+			margin-left: 42.4%;
+			margin-top: 2.7%;
+			position: normal;
+		}
+		#footer{
+			margin-left: 0%;
+			margin-top: -7%;
+			margin-bottom: -10%;
+			font-size: 90%;
+		}
+		a{
+			color: white;
+			text-decoration: none;
+		}
+		#login:hover{
+			color: grey;
+		}
+	</style>
+</head>
+<body>
+<div>
+<form>
+<img src="piggyBg.jpg" id="pigBg" />
+<a href="#"><img src="piggyBut.jpg" id="pigB" /></a>
+<fieldset>	
+		<p><span >Create a Secure Account<br /></span><span id="sintro">Welcome to future of savings &amp; investments</span></p>
+		<label>	
+				<b>Full Name</b><br />
+				<input type="text" name="fullname" placeholder="Full Name" />
+		</label><br />
+		<label>	
+				<b>Email Address</b><br />
+				<input type="email" name="email" placeholder="Email Address" />
+		</label><br />
+		<label>	
+				<b>Phone Number</b><br />
+				<input type="text" name="phoneNumber" placeholder="Phone Number" />
+		</label><br />
+		<label>	
+				<b>Password</b><br />
+				<input type="password" name="password" placeholder="Password" />
+		</label><br />
+		<label>	
+				<b>Referrer Phone or Promo Code (Optional)</b><br />
+				<input type="text" name="refPhone" placeholder="Referrer Phone or Code" />
+		</label><br />
+		<label>	
+				<b>How Did You Here About Us? (Optional)</b><br />
+				<input list="aboutUs" name="aboutUs" placeholder="Click To Select" id="myList">
+				<datalist id="aboutUs" >
+					<option value="Facebook"</option>
+					<option value="Twitter"</option>
+					<option value="Instagram"</option>
+					<option value="Friend/Family/Coworker Referral"</option>
+					<option value="Google search"</option>
+					<option value="Google Playstore"</option>
+					<option value="Online Blog"</option>
+					<option value="Local Newspaper"</option>
+					<option value="At an event"</option>
+					<option value="Other"</option>
+				</datalist>
+		</label><br />
+		<label>	
+				<input type="Submit" value="CREATE ACCOUNT" id="submit" />
+		</label><br />	
+</fieldset>
+<p id="footer"><a href="#" id="login">Already have an account? Login</a></p>
+</form>
+</div>
+</body>
+</html>
