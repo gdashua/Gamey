@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body,html {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+
+}
+
+/* Style the header */
+.header {
+  position: fixed;
+  grid-area: header;
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  width: 100%;
+  height: 10%;
+  z-index: 20;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle middle middle' 
+    'footer footer footer footer footer footer';
+  height: 100%;
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  position: fixed;
+  grid-area: left;
+  top: 11%;
+  padding: 0;
+  color: yellow;
+  font-size: xx-large;
+  font-style: inherit;
+  height: 100%;
+  width: 45%;
+  z-index: 10;
+  text-align: center;
+  
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+  opacity: 0.8;
+  margin-top: 10%;
+  
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Style the footer */
+.footer {
+  float: right;
+  grid-area: footer;
+  background-color: #53a5f1;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: -0.5%;
+  margin-left: 40.5%;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.logo{
+  height: 7%; width: 7%;
+}
+ul{
+  list-style-image: url('arrBullet.jpg');
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+.header{
+  font: 1em sans-serif;
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="header"><li class="header">hello</li>
+  </div>
+  
+  <div class="left" style=""><img src="bg.JPG" alt=""></div>
+  <div class="middle" style="">
+    <img src="shell.JPG" alt="" class="logo">
+    <h3 id="shell" >Job oppurtunities at NNPC</h3>
+    <ul>
+    <li class="vacancy"><strong>ICT assistant</strong></li>
+    <li class="vacancy"><strong>Accountant</strong></li>
+    <li class="vacancy"><strong>HR officer</strong></li>
+    <li class="vacancy"><strong>Operations Coordinator</strong></li>
+    <li><strong>M&E intern</strong></li>
+    </ul>
+    <hr>
+    <img src="mtn.JPG" alt="" class="logo">
+    <h3 id="shell" >Job oppurtunities at NNPC</h3>
+    <ul>
+    <li class="vacancy"><strong>ICT assistant</strong></li>
+    <li class="vacancy"><strong>Accountant</strong></li>
+    <li class="vacancy"><strong>HR officer</strong></li>
+    <li class="vacancy"><strong>Operations Coordinator</strong></li>
+    <li><strong>M&E intern</strong></li>
+    </ul>
+  </div> 
+  
+  <div class="footer">
+  <p>copyright &copy; Gamey Technologies</p>
+  </div>
+</div>
+
+</body>
+</html>
